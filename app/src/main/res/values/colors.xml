@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="oilGreen">#018867</color>
+    <color name="revolutionRed">#d52b1e</color>
+    <color name="logoBg">#804F4858</color>
+    <color name="fgColor">#026886</color>
+    <color name="white">#ffffff</color>
+    <color name="midGray">#505050</color>
+</resources>

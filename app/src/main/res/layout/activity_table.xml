@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/silhouette"
+    tools:context=".Table">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:background="@color/logoBg"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_nustwaterqualitylogo" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/brittanicbold"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="Water Quality Monitoring"
+                android:textColor="@color/white"
+                app:autoSizeTextType="uniform" />
+        </LinearLayout>
+
+        <ir.androidexception.datatable.DataTable
+            android:id="@+id/data_table"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0.9"
+            app:cardBackgroundColor="#80ffffff"
+            app:corner_radius="6dp"
+            app:direction="ltr"
+            app:header_gravity="center"
+            app:header_horizontal_padding="2dp"
+            app:header_text_color="#000000"
+            app:header_text_size="4sp"
+            app:header_vertical_padding="6dp"
+            app:persian_number="false"
+            app:row_gravity="center"
+            app:row_text_color="#000000"
+            app:row_text_size="6sp"
+            app:row_vertical_padding="6dp"
+            app:shadow="6dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
